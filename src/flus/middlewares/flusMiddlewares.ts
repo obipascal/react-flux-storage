@@ -1,3 +1,5 @@
+import { FluxPayload, FluxState } from "types/types"
+
 export const FlusMiddlewares = {
 	flusapp: {
 		createDynamicStore(state: FluxState, payload: FluxPayload) {

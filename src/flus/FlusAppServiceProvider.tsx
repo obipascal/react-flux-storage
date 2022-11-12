@@ -2,6 +2,7 @@ import React, { useReducer } from "react"
 import { DispatchManager } from "./Dispatcher"
 import { QueryClientProvider, QueryClient } from "react-query"
 import { FlusActions } from "./actions/flusActions"
+import { FlusAppServiceProviderProps } from "types/types"
 
 // The application global store context
 export const FlusGlobalStateStore = React.createContext({})

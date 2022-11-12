@@ -1,5 +1,6 @@
 import { FlusGlobalStateStore, FlusActionDispatcher } from "../FlusAppServiceProvider"
 import React, { useContext } from "react"
+import { FluxDispatcher, FluxState } from "types/types"
 
 /**
  * It return the stores object which can be distruct to get the specific store

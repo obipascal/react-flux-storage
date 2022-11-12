@@ -1,4 +1,4 @@
-interface FluxUserState {
+export interface FluxUserState {
 	/**
 	 * The active user object
 	 */
@@ -9,12 +9,11 @@ interface FluxUserState {
 	isActive?: boolean
 }
 
-interface FluxState {
+export interface FluxState {
 	[key: string]: object | string | null | number | any | FluxUserState
 }
 
-interface FluxPayload {
-	[key: string]: string | object | number | null
+export interface FluxPayload {
 	store?: string
 	data?: string | number | null | FluxState
 	token?: string
@@ -23,19 +22,20 @@ interface FluxPayload {
 	 * give the user the previllage to handle the dispatched event by tapping into the app glogal store object.
 	 */
 	onDispatched: (state?: FluxState, event?: string, data?: FluxState | any) => any
+	[key: string]: string | object | number | null | any
 }
 
-interface FluxActions {
+export interface FluxActions {
 	[key: string]: (state: FluxState, payload: FluxPayload) => FluxState | object
 }
 
-interface FlusAppServiceProviderProps {
+export interface FlusAppServiceProviderProps {
 	stores: object | FluxState
 	actions: object | FluxActions
 	children: React.ReactNode
 }
 
-interface FluxDispatcher {
+export interface FluxDispatcher {
 	type?: string
 	payload: FluxPayload | any
 }

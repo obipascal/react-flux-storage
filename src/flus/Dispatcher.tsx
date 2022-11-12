@@ -1,6 +1,8 @@
 /** This is where all the dispatched events in the application are handled 
 then the stat is computed and returned*/
 
+import { FluxActions, FluxState } from "types/types"
+
 export const DispatchManager = (state: FluxState, action: any, userActions: FluxActions) => {
 	// State Manager event listeners
 	if (typeof userActions[action?.type] !== "undefined" && userActions[action?.type]) {
