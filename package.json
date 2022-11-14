@@ -1,6 +1,6 @@
 {
 	"name": "@bilmapay/react-flux-storage",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "A simple react JS/Native state management library for anyone looking to use a state management library on his project to effectively manage global state.",
 	"main": "lib/index.js",
 	"types": "lib/index.d.ts",
@@ -23,12 +23,12 @@
 		"react": "^18.1.0",
 		"react-dom": "^18.1.0",
 		"react-query": "^3.39.0",
-		"typescript": "^4.8.4",
 		"rollup": "^2.74.1",
 		"rollup-plugin-babel": "^4.4.0",
 		"rollup-plugin-peer-deps-external": "^2.2.4",
 		"rollup-plugin-postcss": "^4.0.2",
-		"rollup-plugin-terser": "^7.0.2"
+		"rollup-plugin-terser": "^7.0.2",
+		"typescript": "^4.8.4"
 	},
 	"scripts": {
 		"build": "tsc",
