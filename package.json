@@ -1,6 +1,6 @@
 {
 	"name": "@bilmapay/react-flux-storage",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "A simple react JS/Native state management library for anyone looking to use a state management library on his project to effectively manage global state.",
 	"main": "lib/index.js",
 	"types": "lib/index.d.ts",
